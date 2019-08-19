@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap CSS -->
+    <link href="./res/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!-- jQuery UI CSS -->
+    <link href="./res/jquery-ui.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./res/style.css">
+    <title>Title</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-md-8 col-6 canvas" id="sortable"></div>
+            <div class="col-md-4 col-6 tools border-left border-top">
+                <h2 class="mb-3 menu text-center mb-5">Menu</h2>
+                <!-- Input Form -->
+                <div class="cursor tool border p-3 tool-1" draggable="true" id="inputfield">
+                    <input
+                        class="my-2 text-left mr-5 pr-5 muted" type="text" placeholder="Name" draggable="false"
+                        disabled>
+                </div>
+                <!-- Slider -->
+                <div class="cursor tool border p-3 tool-2 mt-4 w-100" draggable="true" id="slider"><input class="my-2 slider muted w-100" type="range" min="10" value="10" max="2000" step="100" disabled draggable="false"></div>
+                <!-- Trash Bin -->
+                <div id="trash" class="trash text-danger border">
+                    <i class="fa fa-trash-o fa-3x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7c5c153afc.js"></script>
+
+    <!-- jQuery -->
+    <script src="./res/jquery.js"></script>
+    <!-- jQuery UI -->
+    <script src="./res/jquery-ui.js"></script>
+    <!-- Custom JS -->
+    <script src="./res/main.js"></script>
+</body>
+
+</html>
